@@ -7,6 +7,7 @@ public class Ll1 {
         //create
         LinkedList<Integer> ll = new LinkedList<>();
         ll.addLast(1);
+        
         ll.addLast(2);
         ll.addFirst(0);
         //0->1->2

@@ -17,7 +17,7 @@ public class MultiDimensionAl2 {
         mainList.add(list2);
         mainList.add(list3);
 
-         list2.remove(2);
+         list2.remove(2); 
          list2.remove(3);
 
 

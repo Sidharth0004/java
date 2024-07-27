@@ -184,6 +184,8 @@ public class LinkedList {
 
        }
 
+        //  ! Flipkart Qualcum Adobe
+
 
        public void deleteNthfromEnd(int n){
         // Calculate size
@@ -366,7 +368,7 @@ public class LinkedList {
 
 
   
-
+    // ! 
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         // ll.print();

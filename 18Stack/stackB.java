@@ -6,7 +6,7 @@ public class stackB {
         static ArrayList<Integer> list = new ArrayList<>();
         public static boolean isEmpty(){
             return list.size() == 0;
-
+ 
         }
         //push
         public static void push (int data){
@@ -32,7 +32,7 @@ public class stackB {
         }
     }
     public static void main(String[] args) {
-        Stack s = new Stack();
+        // Stack s = new Stack();
         s.push(1);
         s.push(2);
         s.push(3);

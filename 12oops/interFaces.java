@@ -4,6 +4,7 @@ public class interFaces {
         q.moves(); 
     }
 }
+
 interface ChessPlayer{
     void moves();   
 }

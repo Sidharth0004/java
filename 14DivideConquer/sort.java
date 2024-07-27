@@ -18,9 +18,9 @@ public class sort {
         merge(arr, si, mid, ei);
     }
     public  static void merge(int arr[], int si,int mid,int ei){
-        // left(0,3)=4  , right(4,6)=3
+        // left(0,3)=4  , right(4,6)=3  
         int temp[]=new int[ei-si+1];
-        int i = si;  // iterator for left part
+        int i = si;  // iterator for left part   
         int j = mid+1; // iterator for right part
         int k =0;  // iterator for temp array
         while (i<=mid && j<=ei) {

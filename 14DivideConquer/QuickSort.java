@@ -18,11 +18,11 @@ int pivot = arr[ei];
 int i = si-1; // to make a place for element smaller than pivot
 for (int j = si; j < ei; j++) {
     if(arr[j]<=pivot){
- i++;
+ i++;      
  // swap
  int temp = arr[j];
  arr[j]=arr[i];
- arr[i]=temp;
+ arr[i]=temp; 
     }
 }
 i++;
