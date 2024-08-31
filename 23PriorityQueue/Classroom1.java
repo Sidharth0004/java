@@ -11,7 +11,7 @@ public class Classroom1  {
             this.name = name;
             this.rank = rank;
         }
-
+   
         @Override
         public int compareTo(Student s2){
             return this.rank - s2.rank;
