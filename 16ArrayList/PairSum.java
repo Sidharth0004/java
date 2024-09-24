@@ -42,7 +42,7 @@ public class PairSum {
         list.add(4);
         list.add(5);
         list.add(6);
-        int target = 50 ;
+        int target = 9 ;
         System.out.println(pairSum1(list, target));
     }
 

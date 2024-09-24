@@ -1,2 +1,1 @@
-String path ="WNEENESENNN";
-        System.out.println(getshortestPath(path));
+//         while (i<str.length()-1    && str.charAt(i)==str.charAt(i+1)) {

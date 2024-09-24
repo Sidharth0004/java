@@ -8,13 +8,14 @@ public class stockspan {
        for (int i = 1; i < stock.length; i++) {
         int currPrice = stock[i];
         while (!s.isEmpty() && currPrice > stock[s.peek()]) {
+           
             s.pop();
 
-        }
+           }
         if (s.isEmpty()) {
             span[i] =i+1;
         }
-        else{
+         else{
             int prevHigh = s.peek();
             span[i]=  i - prevHigh;
         }
