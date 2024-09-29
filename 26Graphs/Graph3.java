@@ -83,7 +83,7 @@ public class Graph3 {
 
     // DFS Way
 
-public static void bfs(ArrayList<Edge> [] graph){
+public static void dfs(ArrayList<Edge> [] graph){
    boolean  vis[] = new boolean[graph.length];
 
    for (int i = 0; i < graph.length; i++) {
@@ -100,11 +100,11 @@ public static void bfs(ArrayList<Edge> [] graph){
             
             Edge e = graph[curr].get(i);
             if (!vis[e.dest]) {
-                dfs(graph, e.dest, vis);
+                dfsUtil(graph, e.dest, vis);
 
             }
         }
-   
+    }
 
     public static void main(String[] args) {
         int V = 7 ;
