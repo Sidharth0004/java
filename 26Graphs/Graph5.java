@@ -66,9 +66,7 @@ public class Graph5 {
                     color[e.dest] = nextCol;
                     q.add(e.dest);
 
-                 }
-
-                 else if (color[e.dest] == color[curr]) {
+                 }else if (color[e.dest] == color[curr]) {
                     return false; // Not Bipartite
 
                  }
@@ -80,14 +78,14 @@ public class Graph5 {
 
       }
      
-  return false;
+  return true;
         }
 
 
     
     public static void main(String[] args) {
       
-
+// if graph dosen't have cycle ->(Bipartite)
                     //    0 ----- 2
                     //   /          \
                     //  /            \ 
