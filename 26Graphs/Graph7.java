@@ -43,7 +43,7 @@ public class Graph7 {
 
             for (int i = 0; i < graph.length; i++) {
                 if (!vis[i]) {
-                    topSortUtil(graph , i , vis , s); // modified dfs
+                     topSortUtil(graph , i , vis , s); // modified dfs
                 }
             }
 
