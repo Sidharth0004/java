@@ -35,13 +35,15 @@ public class Graph11 {
 
     public static void  bellmanford(ArrayList<Edge> graph[] , int src){
         int dist [] = new int[graph.length];
+        
         for (int i = 0; i < dist.length; i++) {
+        // dist[src] = 0; // Initialize the source vertex distance to 0
+
             if (i!=src) {
                 dist[i]= Integer.MAX_VALUE;  //+ infinity
 
             }
         }
-        // dist[src] = 0; // Initialize the source vertex distance to 0
 
       int V = graph.length;
 
