@@ -16,7 +16,7 @@ public class LinkedList {
     public static Node tail;
     public static int size;
 
-    // Methods
+    // Methods.
     // add()
     // remove()
     // print()
@@ -25,23 +25,16 @@ public class LinkedList {
 
                                                                  // ADD First
     public void addFirst(int data) {
-
-        // step1 = create new node
         Node newNode = new Node(data);
         size++;
         if (head == null) {
             head = tail = newNode;
             return;
         }
-
-        // step2- newNode next = head
         newNode.next = head;
-
-        // step3 - head= newNode
         head = newNode;
     }
-
-                                                   // ADD Last
+                                             // ADD Last
     public void addLast(int data) {
         Node newNode = new Node(data);
         size++;
@@ -69,7 +62,7 @@ public class LinkedList {
         System.out.println("null");
     }
 
-                                                         // Add inm the Middle
+                                                         // Add in the Middle
     public void add(int idx, int data) {
         Node newNode = new Node(data);
         size++;
@@ -88,10 +81,8 @@ public class LinkedList {
         newNode.next = temp.next;
         temp.next = newNode;
     }
-
                                                    // remove first
     public int removeFirst() {
-
         if (size == 0) {
             System.out.println("ll is Empty");
             return Integer.MIN_VALUE;
@@ -130,24 +121,21 @@ public class LinkedList {
         size--;
         return val;
     }
-
-                                                 // search (Iterative method)
+                                                // search (Iterative method)
     public int itrSearch(int key) {
         Node temp = head;
         int i = 0;
-        while (temp != null) {
+        while (temp != null) {            
             if (temp.data == key) {
                 return i;
             }
             temp = temp.next;
             i++;
         }
-
         // key not found
         return -1;
     }
-
-                                                          // search(Recursive)
+                                                              // search(Recursive)
     public int helper(Node head, int key) {
         if (head == null) {
             return -1;
@@ -174,7 +162,7 @@ public class LinkedList {
         Node prev = null;
         Node curr =tail= head;
         Node next;
-        while (curr!= null) {
+        while (curr != null) {
             next = curr.next;
             curr.next = prev;
             prev=curr;
@@ -185,8 +173,6 @@ public class LinkedList {
        }
 
         //  ! Flipkart Qualcum Adobe
-
-
        public void deleteNthfromEnd(int n){
         // Calculate size
         int sz=0;

@@ -69,7 +69,7 @@ public class LinkedList2 {
     }
 
 
-                 // removing cycle
+           // removing cycle
      public static void removeCycle(){
         //detect cycyle
    Node slow = head;
@@ -86,10 +86,11 @@ public class LinkedList2 {
    if (cycle == false ) {
     return;
    }
-        //find meeting point 
-
+         //find meeting point 
+    
           slow = head;
           Node prev = null;
+          
           while (slow != fast) {
             prev = fast;
             slow = slow.next;

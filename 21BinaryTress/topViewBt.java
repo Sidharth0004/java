@@ -57,7 +57,7 @@ public class topViewBt {
                q.add(new Info(curr.node.left, curr.hd-1));
                min = Math.min(min, curr.hd-1);
               }
-              if (curr.node.right != null) {
+              if (curr.node.right != null) { 
                q.add(new Info(curr.node.right, curr.hd+1));
                max = Math.max(max, curr.hd+1);
               }

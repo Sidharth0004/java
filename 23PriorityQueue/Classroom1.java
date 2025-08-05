@@ -41,7 +41,7 @@ public class Classroom1  {
         System.out.println(pq.peek().name + " -> " + pq.peek().rank);
         pq.remove();
        }
-
+ 
 
     }
 }

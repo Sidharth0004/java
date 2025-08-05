@@ -1,1 +1,1 @@
-arr[s.peek()]
+ list.remove(list.size()-1);
